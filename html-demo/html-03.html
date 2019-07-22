@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="content">
+        内容
+    </div>
+</div>
+<script>
+
+    var a = 10; // 全局使用域
+    function foo() {
+// var a 的声明将被提升到到函数的顶部。
+// 比如:var a
+
+        console.log(a); // 打印 undefined
+
+// 实际初始化值20只发生在这里
+        var a = 20; // local scope
+    }
+
+    foo()
+
+</script>
+</body>
+</html>

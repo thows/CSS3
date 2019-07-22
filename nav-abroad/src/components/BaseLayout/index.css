@@ -1,0 +1,15 @@
+.App {
+    text-align: center;
+    background: aquamarine;
+}
+
+.logo {
+    line-height: 68px;
+    text-align: center;
+    align-content: center;
+    height: 68px;
+    background-color: darkblue;
+    margin: 62px 16px;
+    background-size: cover;
+
+}
