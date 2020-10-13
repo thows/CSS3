@@ -2,3 +2,15 @@
 */node_modules
 .idea
 */.idea
+/todolist/scripts/build.js
+/todolist/config/jest/cssTransform.js
+/todolist/config/env.js
+/todolist/config/jest/fileTransform.js
+/todolist/config/modules.js
+/package-lock.json
+/todolist/config/paths.js
+/todolist/config/pnpTs.js
+/todolist/scripts/start.js
+/todolist/scripts/test.js
+/todolist/config/webpack.config.js
+/todolist/config/webpackDevServer.config.js

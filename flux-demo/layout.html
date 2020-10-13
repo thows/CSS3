@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>布局测试</title>
+</head>
+<body>
+<header>
+    <nav>    <!--导航链接标签-->
+        <ul>    <!--配合ul使用-->
+            <li>首页</li>
+            <li>关于</li>
+            <li>产品</li>
+            <li>联系</li>
+        </ul>
+    </nav>
+</header>
+
+<div>
+    <section>
+        <p>这是一个section部分</p>
+    </section>
+    <aside>定义页面内容的侧边框部分</aside>
+</div>
+<footer>定义一个页面或是区域的底部</footer>
+
+</body>
+<style>
+    html{
+        height: 100%;
+    }
+    body {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    
+    }
+    
+    body>div{
+        background: #FF3333;
+        display: flex;
+        flex-direction: row;
+        flex: 1 0 auto;
+    }
+    
+    section {
+        background-color: #657786;
+    }
+    
+    aside {
+        background-color: #0f2238;
+    }
+    
+    /*页面底部*/
+    footer {
+        background-color: #abcdef;
+        flex: 0 0 auto;
+    }
+ 
+    ul{
+        display: flex;
+        flex-direction: row;
+    }
+    li {
+        list-style: none;
+        margin-left: 12px;
+    }
+   
+</style>
+</html>
