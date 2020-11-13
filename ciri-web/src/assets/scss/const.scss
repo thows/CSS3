@@ -1,0 +1,214 @@
+// 定义字体、颜色规范
+
+// //定义字体规范
+// $font-size-small-s  : 10px;
+// $font-size-small    : 12px;
+// $font-size-medium   : 14px;
+// $font-size-medium-x : 16px;
+// $font-size-large    : 18px;
+// $font-size-large-x  : 22px;
+
+// // 定义颜色规范
+// $color-background           : #222;
+// $color-background-d         : rgba(0, 0, 0, 0.3);
+// $color-highlight-background : #333;
+// $color-dialog-background    : #666;
+// $color-theme                : #ffcd32;
+// $color-theme-d              : rgba(255, 205, 49, 0.5);
+// $color-sub-theme            : #d93f30;
+// $color-text                 : #fff;
+// $color-text-d               : rgba(255, 255, 255, 0.3);
+// $color-text-l               : rgba(255, 255, 255, 0.5);
+// $color-text-ll              : rgba(255, 255, 255, 0.8);
+.btn{
+  height:38px;
+  line-height:38px;
+  width:100%;
+  background: #3f83e6;
+  color:#fff;
+  font-size: 15px;
+  border-radius: 3px;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.small-btn{
+  width:75px;
+  height:22px;
+  line-height:22px;
+  margin-top: -11px;
+  font-size: 13px;
+  background: #528de8;
+  color:#fff;
+  border-radius: 3px;
+  text-align: center;
+
+}
+//设置body 背景颜色
+.ping-bg{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  background:#f5f5f5;
+}
+//设置弹框背景
+.pop-bg{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  background: rgba(51, 51, 51, 0.5);
+  z-index: 999;
+  padding: 0 2.7%;
+}
+em{
+  font-style: normal;
+}
+//资讯页面通用样式
+.news{
+  .project1{
+    h2{
+      height:auto!important;
+      margin-bottom: 7px!important;
+    }
+  }
+  .title-box{
+    //浏览数
+    .count{
+      height:18px;
+      display: inline-block;
+      line-height: 18px;
+      margin-top: 2px;
+    }
+  }
+  .img-warp{
+    .img{
+      border-radius: 3px;
+      overflow: hidden;
+    }
+  }
+}
+#sliderIndex1 .mint-swipe-indicators{
+  background: none;
+}
+#slider1 .mint-swipe-indicators {
+  right: 10px;
+  left: initial;
+  z-index: 99;
+  height: 35px;
+  line-height: 35px;
+  background: none;
+  transform: none;
+}
+
+//修改资讯页面轮播样式
+#slider1 .mint-swipe-indicator{
+  width:15px;
+  height:3px;
+  background: #fff;
+  margin: 0 0 0 6px;
+  opacity: 1;
+  border-radius: initial;
+}
+#slider1 .mint-swipe-indicator.is-active{
+  background: #528de8;
+}
+#project-slider .mint-swipe-indicators {
+  right:10px;
+}
+#project-slider .mint-swipe-indicator{
+  width:15px;
+  margin-left: 6px;
+  margin-right: 0;
+}
+#project-slider .mint-swipe-indicators {
+  right:-44px;
+}
+#project-slider .mint-swipe-indicator{
+  width:15px;
+  margin-left: 6px;
+  margin-right: 0;
+}
+//渐变背景
+.gradient{
+  background: -webkit-linear-gradient(left, rgba(56,185,253,1) ,rgba(63,132,230,0.65)); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(right, rgba(56,185,253,1) ,rgba(63,132,230,0.65)); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(right, rgba(56,185,253,1) ,rgba(63,132,230,0.65)); /* Firefox 3.6 - 15 */
+  background: linear-gradient(to right, rgba(56,185,253,1) ,rgba(63,132,230,0.65)); /* 标准的语法 */
+}
+//修改首页banner轮播样式
+#sliderIndex1 .mint-swipe-indicator{
+  width:6px;
+  height:6px;
+  background:#fff;
+  opacity:1;
+}
+#sliderIndex1 .mint-swipe-indicator.is-active{
+background: #3f83e6;
+}
+#big-img{
+  .structure-warp{
+    padding: 0 10px;
+    text-align: left;
+    figure{
+      background: #fff;
+      width: 48.7%;
+      float: left;
+      position: relative;
+      margin: 0;
+      &:nth-of-type(odd){
+        margin-right:2.6%;
+      }
+      img{
+        height:129px;
+        width:100%;
+      }
+      figcaption{
+        display: block!important;
+        text-align: center;
+        font-size: 13px;
+        color: #333;
+        line-height: 1;
+        overflow: hidden;
+        margin: 10px 0 15px;
+        font-weight: normal;
+        text-align: center;
+      }
+    }
+    .pswp__ui{
+      .pswp__button--share{
+        display: none;
+      }
+    }
+  }
+}
+
+//删除弹框样式调整
+.mint-msgbox-wrapper{
+  .mint-msgbox{
+    border-radius: 6px;}
+  .mint-msgbox-title{
+    display: none;
+  }
+  .mint-msgbox-content{
+    min-height: auto;
+    padding:30px 20px 32px;
+    .mint-msgbox-message{
+      color:#333;
+      font-size: 16px;
+      line-height: 1;
+    }
+  }
+  .mint-msgbox-btn{
+    font-size: 18px;
+    line-height: 45px;
+    color:#333;
+    font-weight: normal;
+  }
+  .mint-msgbox-confirm{
+    color:#528de8;
+  }
+}
+
+

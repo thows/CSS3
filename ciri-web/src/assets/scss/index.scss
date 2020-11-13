@@ -1,0 +1,28 @@
+//行业分类图标滑动
+@mixin bg-image($name) {
+  background-image: url($name + '@2x.png');
+  @media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+    background-image: url($name + "@3x.png");
+  }
+}
+#index-industry{
+  .swiper-button-next,.swiper-button-prev{
+    background-size: 6px 10px;
+    width:6px;
+    height:10px;
+    background-color:#bdd5f6 ;
+    padding:10px 2px;
+    margin-top: -15px;
+    &:focus{
+      outline: none;
+    }
+  }
+  .swiper-button-prev{
+    left: 0;
+    @include bg-image("../../assets/img/slider-prev");
+  }
+  .swiper-button-next{
+    right:0;
+    @include bg-image("../../assets/img/slider-next");
+  }
+}
